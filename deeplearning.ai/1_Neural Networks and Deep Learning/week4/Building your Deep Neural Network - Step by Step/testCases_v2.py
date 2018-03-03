@@ -61,12 +61,12 @@ def compute_cost_test_case():
     return Y, aL
 
 def linear_backward_test_case():
-    """
-    z, linear_cache = (np.array([[-0.8019545 ,  3.85763489]]), (np.array([[-1.02387576,  1.12397796],
-       [-1.62328545,  0.64667545],
-       [-1.74314104, -0.59664964]]), np.array([[ 0.74505627,  1.97611078, -1.24412333]]), np.array([[1]]))
-    """
+
+	# z, linear_cache = np.array([[-0.8019545 ,  3.85763489]]), (np.array([[-1.02387576,  1.12397796],[-1.62328545,  0.64667545],[-1.74314104, -0.59664964]]), np.array([[ 0.74505627,  1.97611078, -1.24412333]]), np.array([[1]]))
+	   
+	# return z, linear_cache
     np.random.seed(1)
+	
     dZ = np.random.randn(1,2)
     A = np.random.randn(3,2)
     W = np.random.randn(1,3)
